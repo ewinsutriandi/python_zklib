@@ -1,37 +1,38 @@
 import sys
 sys.path.append("zklib")
 
-from zklib import zklib
+import zklib
 import time
 import zkconst
+import syncAttendance
 
-zk = zklib.ZKLib("192.168.1.201", 4370)
+zk = zklib.ZKLib("192.168.20.9", 4370)
 
 ret = zk.connect()
-print "connection:", ret
+print "Pesan Koneksi:", ret
 
 if ret == True:
-    print "Disable Device", zk.disableDevice()
+    print "Pesan Disable Device", zk.disableDevice()
     
-    print "ZK Version:", zk.version()
-    print "OS Version:", zk.osversion()
+    print "Pesan Versi:", zk.version()
+    print "Pesan Versi OS:", zk.osversion()
     """
-    print "Extend Format:", zk.extendFormat()
-    print "Extend OP Log:", zk.extendOPLog()
+    print "Pesan Extend Format:", zk.extendFormat()
+    print "Pesan Extend OP Log:", zk.extendOPLog()
     """
     
-    print "Platform:", zk.platform()
-    print "Platform Version:", zk.fmVersion()
-    print "Work Code:", zk.workCode()
-    print "Work Code:", zk.workCode()
-    print "SSR:", zk.ssr()
-    print "Pin Width:", zk.pinWidth()
-    print "Face Function On:", zk.faceFunctionOn()
-    print "Serial Number:", zk.serialNumber()
-    print "Device Name:", zk.deviceName()
+    print "Pesan Platform:", zk.platform()
+    print "Pesan Platform Version:", zk.fmVersion()
+    print "Pesan Work Code:", zk.workCode()
+    print "Pesan Work Code:", zk.workCode()
+    print "Pesan SSR:", zk.ssr()
+    print "Pesan Pin Width:", zk.pinWidth()
+    print "Pesan Face Function On:", zk.faceFunctionOn()
+    print "Pesan Serial Number:", zk.serialNumber()
+    print "Pesan Device Name:", zk.deviceName()
     
     data_user = zk.getUser()
-    print "Get User:"
+    print "Pesan Get User:"
     if data_user:
         for uid in data_user:
             
@@ -40,15 +41,18 @@ if ret == True:
             else:
                 level = 'User'
             print "[UID %d]: ID: %s, Name: %s, Level: %s, Password: %s" % ( uid, data_user[uid][0], data_user[uid][1], level, data_user[uid][3]  )
-
-        #zk.setUser(uid=61, userid='41', name='Dony Wahyu Isp', password='123456', role=zkconst.LEVEL_ADMIN)
+        
+    #print "Pesan Clear Admin:", zk.clearAdmin()
+    #zk.setUser(uid=61, userid='41', name='Dony Wahyu Isp', password='123456', role=zkconst.LEVEL_ADMIN)
     
     attendance = zk.getAttendance()
-    print "Get Attendance:"
+    print "Pesan Get Attendance: %s" % (len(attendance))
     
     if ( attendance ):
+        i = syncAttendance.Synchronizer()
+        cnt = 1
+        
         for lattendance in attendance:
-            print lattendance[1]
             if lattendance[1] == 15:
                 state = 'Check In'
             elif lattendance[1] == 0:
@@ -56,11 +60,17 @@ if ret == True:
             else:
                 state = 'Undefined'
                 
-            print "date %s, Jam %s: %s, Status: %s" % ( lattendance[2].date(), lattendance[2].time(), lattendance[0], state )
-        
-    # print "Clear Attendance:", zk.clearAttendance()
-
+            #print "Tanggal %s, Jam %s: %s, Status: %s" % ( lattendance[2].date(), lattendance[2].time(), lattendance[0], state )
+            #print lattendance[0]
+            #print cnt
+            #cnt = cnt +1
+            i.insert(lattendance)
+            
+            #print lattendance
+        #print "Pesan Clear Attendance:", zk.clearAttendance()
     
-    print "Get Time:", zk.getTime()
-    print "Enable Device", zk.enableDevice()
-    print "Disconnect:", zk.disconnect()
+    print "Pesan Get Time:", zk.getTime()
+    
+    print "Pesan Enable Device", zk.enableDevice()
+    
+    print "Pesan Disconnect:", zk.disconnect()

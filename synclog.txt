@@ -1,0 +1,30 @@
+
+INFO:root: loading devices 
+INFO:root: Can't create connection 
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2016-08-31 13:38:22.217000
+INFO:root: Connected
+INFO:root: Total user: 31
+INFO:root: Total scan: 23297
+INFO:root: Scan terakhir sebelum sync :2016-08-31 13:08:49
+INFO:root: Finished, 1 record(s) synced
+INFO:root: Duration : 0:00:29.271000
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2016-08-31 13:40:11.086000
+INFO:root: Connected
+INFO:root: Total user: 31
+INFO:root: Total scan: 23297
+INFO:root: Scan terakhir sebelum sync :2016-08-31 13:08:49
+INFO:root: Finished, 1 record(s) synced
+INFO:root: Duration : 0:00:29.109000
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2016-08-31 13:46:08.145000
+INFO:root: Connected
+INFO:root: Total user: 31
+INFO:root: Total scan: 23297
+INFO:root: Scan terakhir sebelum sync :None
+INFO:root: Finished, 23297 record(s) synced
+INFO:root: Duration : 0:25:53.824000
+INFO:root:_____________________END________________________
