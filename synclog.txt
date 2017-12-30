@@ -28,3 +28,25 @@ INFO:root: Scan terakhir sebelum sync :None
 INFO:root: Finished, 23297 record(s) synced
 INFO:root: Duration : 0:25:53.824000
 INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: Can't create connection 
+INFO:root: loading devices 
+INFO:root: Can't create connection 
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2017-12-30 08:29:20.201527
+INFO:root: Connected
+INFO:root: Total user: 1
+INFO:root: Total scan: 9
+INFO:root: Scan terakhir sebelum sync :None
+INFO:root: Finished, 9 record(s) synced
+INFO:root: Duration : 0:00:00.535792
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2017-12-30 08:29:39.772389
+INFO:root: Connected
+INFO:root: Total user: 1
+INFO:root: Total scan: 9
+INFO:root: Scan terakhir sebelum sync :2017-12-30 07:42:25
+INFO:root: Finished, 0 record(s) synced
+INFO:root: Duration : 0:00:00.026212
+INFO:root:_____________________END________________________

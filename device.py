@@ -6,8 +6,9 @@ Created on 2 Jul 2016
 from ConfigParser import SafeConfigParser
 import logging
 import syncAttendance
-import zklib
+import zklibs
 import datetime
+from zklibs import zklib
 
 def prepareParams():
     parser = SafeConfigParser()

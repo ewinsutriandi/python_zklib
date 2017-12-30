@@ -1,12 +1,15 @@
 import sys
 sys.path.append("zklib")
 
-import zklib
-import time
-import zkconst
-import syncAttendance
 
-zk = zklib.ZKLib("192.168.20.9", 4370)
+import zklibs
+import time
+from zklibs import zkconst
+import syncAttendance
+#from zklib import ZKlib
+
+
+zk = zklibs.zklib.ZKLib("192.168.1.201", 4370)
 
 ret = zk.connect()
 print "Pesan Koneksi:", ret
@@ -49,7 +52,7 @@ if ret == True:
     print "Pesan Get Attendance: %s" % (len(attendance))
     
     if ( attendance ):
-        i = syncAttendance.Synchronizer()
+        #i = syncAttendance.Synchronizer()
         cnt = 1
         
         for lattendance in attendance:
@@ -60,11 +63,11 @@ if ret == True:
             else:
                 state = 'Undefined'
                 
-            #print "Tanggal %s, Jam %s: %s, Status: %s" % ( lattendance[2].date(), lattendance[2].time(), lattendance[0], state )
+            print "Tanggal %s, Jam %s: %s, Status: %s" % ( lattendance[2].date(), lattendance[2].time(), lattendance[0], state )
             #print lattendance[0]
             #print cnt
             #cnt = cnt +1
-            i.insert(lattendance)
+            #i.insert(lattendance)
             
             #print lattendance
         #print "Pesan Clear Attendance:", zk.clearAttendance()
