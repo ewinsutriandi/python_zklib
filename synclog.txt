@@ -50,3 +50,60 @@ INFO:root: Scan terakhir sebelum sync :2017-12-30 07:42:25
 INFO:root: Finished, 0 record(s) synced
 INFO:root: Duration : 0:00:00.026212
 INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2017-12-30 19:00:02.482467
+INFO:root: Connected
+INFO:root: Total user: 47
+INFO:root: Total scan: 10453
+INFO:root: Scan terakhir sebelum sync :2017-12-30 07:42:25
+INFO:root: Finished, 0 record(s) synced
+INFO:root: Duration : 0:00:11.935682
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2017-12-30 19:06:39.791205
+INFO:root: Connected
+INFO:root: Total user: 48
+INFO:root: Total scan: 10455
+INFO:root: Scan terakhir sebelum sync :2017-12-30 07:42:25
+INFO:root: Finished, 0 record(s) synced
+INFO:root: Duration : 0:00:11.838776
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2017-12-30 19:08:49.269829
+INFO:root: Connected
+INFO:root: Total user: 48
+INFO:root: Total scan: 10457
+INFO:root: Scan terakhir sebelum sync :2017-12-30 07:42:25
+INFO:root: Finished, 2 record(s) synced
+INFO:root: Duration : 0:00:11.891322
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2018-01-02 11:35:28.812563
+INFO:root: Connected
+INFO:root: Total user: 32
+INFO:root: Total scan: 67
+INFO:root: Scan terakhir sebelum sync :2017-12-30 19:08:33
+INFO:root: Finished, 32 record(s) synced
+INFO:root: Duration : 0:00:02.236970
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2018-01-02 11:36:25.050898
+INFO:root: failed 
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2018-01-02 12:31:53.445099
+INFO:root: failed 
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2018-01-02 12:33:39.107431
+INFO:root: failed 
+INFO:root:_____________________END________________________
+INFO:root: loading devices 
+INFO:root: start syncing machine with ID 1 @ 2018-01-02 12:34:01.495110
+INFO:root: Connected
+INFO:root: Total user: 32
+INFO:root: Total scan: 71
+INFO:root: Scan terakhir sebelum sync :2018-01-02 11:00:14
+INFO:root: Finished, 4 record(s) synced
+INFO:root: Duration : 0:00:00.358087
+INFO:root:_____________________END________________________

@@ -31,10 +31,10 @@ class Synchronizer():
         logging.basicConfig(filename=glLogFile,level=logging.INFO)
         self.db = MySQLdb.connect(glIP,glDBuser,glDBpass,glDBschema)
         def userLastScanTime(self):
-            sql = """select max(scantime) from attlog"""
+            sql = """select max(scantime) from attlog where mesin_id=%s"""
             c = self.db.cursor()
             try:
-                c.execute(sql)
+                c.execute(sql,(self.devnum))
                 result = c.fetchall()
                 if (result):
                     row = result [0]
